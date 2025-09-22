@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import './App.css';
+import WelcomeMessage from './WelcomeMessage';
 
 function App() {
   const [currentTime, setCurrentTime] = useState(new Date());
@@ -12,8 +14,10 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <h1>De huidige tijd is:</h1>
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h1>Opdracht 2 - UseEffect</h1>
+      <WelcomeMessage />
+      <h2>De huidige tijd is:</h2>
       <p>{currentTime.toLocaleTimeString()}</p>
     </div>
   );
