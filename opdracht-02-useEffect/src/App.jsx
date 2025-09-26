@@ -2,8 +2,10 @@ import { useState, useEffect } from "react";
 import './App.css';
 import WelcomeMessage from './components/WelcomeMessage';
 
+
 function App() {
   const [currentTime, setCurrentTime] = useState(new Date());
+
 
   useEffect(() => {
     const intervalId = setInterval(() => {
