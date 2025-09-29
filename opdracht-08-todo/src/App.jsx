@@ -13,7 +13,7 @@ export default function App() {
 
   return (
     <div>
-      <h1>Mijn To-Do List</h1>
+      <h1>Mijn ToDo List</h1>
       <CreateToDo onAdd={addTodo} />
       <ToDoList todos={todos} />
     </div>
