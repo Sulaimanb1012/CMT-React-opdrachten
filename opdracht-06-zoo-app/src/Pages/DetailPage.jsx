@@ -12,7 +12,7 @@ export default function DetailPage() {
         <section className="section-center">
             <h2>{animal.name}</h2>
             <p>{animal.description}</p>
-            <img src = {animal.image} alt = {animal.name} className='w-1/2 h-auto object-cover rounded' />
+            <img src = {animal.image} alt = {animal.name} className='animal' />
         </section> 
     )
 }

@@ -5,12 +5,12 @@ export default function Card({ animal }) {
 
   return (
     <div
-      onClick={() => navigate(`/animal/${animal.id}`)}
-      className="cursor-pointer border rounded shadow hover:shadow-lg p-2"
+      onClick={() => navigate(`/animals.jsx/${animal.id}`)}
+      className="animal"
     >
-      <img src={animal.image} alt={animal.name} className="w-full h-40 object-cover rounded" />
-      <h2 className="text-lg font-bold mt-2">{animal.name}</h2>
-      <p className="text-sm text-gray-600">{animal.description.slice(0, 60)}...</p>
+      <img src={animal.image} alt={animal.name} className="animal" />
+      <h2 className="animal">{animal.name}</h2>
+      <p className="animal">{animal.description.slice(0, 60)}...</p>
     </div>
   );
 }
