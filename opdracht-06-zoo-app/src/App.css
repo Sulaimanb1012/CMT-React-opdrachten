@@ -1,49 +1,93 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f7f7f7;
-  margin: 0;
-  padding: 0;
-}
-
-.section-center {
-  max-width: 1000px;
-  margin: 2rem auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-}
-
-.card {
-  background: white;
+.animal {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #8b6f4f; /* bruine tint */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* fixed */
+  background: #f3e7d1; /* paneel-kleur */
   border-radius: 8px;
-  padding: 1rem;
+  box-shadow: 0 2px 0 rgba(255, 255, 255, 0.6),
+              0 6px 14px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  padding: 10px;
   cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.animal:hover,
+.animal:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 0 rgba(255, 255, 255, 0.7),
+              0 8px 18px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+
+.animal img {
+  display: block;
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-bottom: 6px solid rgba(0, 0, 0, 0.03);
+  border-radius: 6px 6px 0 0;
+}
+
+.animal h2 {
+  font-size: 16px;
+  margin: 8px 0 4px 0;
+  color: #8d4a22;
+}
+
+.animal p {
+  font-size: 13px;
+  color: #6b5a44;
   text-align: center;
-  transition: transform 0.2s;
+  margin: 0 0 6px 0;
 }
 
-.card:hover {
-  transform: scale(1.02);
+.animal-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+  flex: 2;
 }
 
-.card img {
-  max-width: 100%;
-  border-radius: 8px;
+.detail-card {
+  background: #f3e7d1;
+  display: flex ;
+  flex-direction: row-reverse;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  padding: 20px;
+  max-width: 350px;
+  flex: 1;
 }
-
-.detail-img {
-  max-width: 400px;
+.section-center{
+  display: flex;
+}
+.detail-card img {
   width: 100%;
   border-radius: 8px;
+  margin-bottom: 12px;
+  object-fit: cover;
 }
 
-.back-btn {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background: #2196f3;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+.detail-card h2 {
+  color: #8d4a22;
+  margin-bottom: 8px;
+}
+
+.detail-card p {
+  font-size: 14px;
+  color: #6b5a44;
+  margin-bottom: 10px;
+}
+
+.zoo-container {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  align-items: flex-start;
 }

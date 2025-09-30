@@ -5,12 +5,12 @@ export default function Card({ animal }) {
 
   return (
     <div
-      onClick={() => navigate(`/animals.jsx/${animal.id}`)}
-      className="animal"
-    >
-      <img src={animal.image} alt={animal.name} className="animal" />
+      onClick={() => navigate(`/animals/${animal.id}`)}
+      className="animal">
+      <img src={animal.image} alt={animal.name} className="animals" />
       <h2 className="animal">{animal.name}</h2>
       <p className="animal">{animal.description.slice(0, 60)}...</p>
     </div>
   );
-}
+} 
+
