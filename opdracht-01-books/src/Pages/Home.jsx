@@ -7,17 +7,17 @@ const Home = () => {
     {
       title: "Interesting Facts For Curious Minds",
       author: "Jordan Moore",
-      image: "/images/curious-minds.jpg",
+      image: "/images/book-1.png",
     },
     {
       title: "Atomic Habits",
       author: "James Clear",
-      image: "/images/atomic-habits.jpg", // let op pad
+      image: "/images/book-2.png", // let op pad
     },
     {
       title: "Fairy Tale",
       author: "Stephen King",
-      image: "/images/fairy-tale.jpg",
+      image: "/images/book-3.png",
     },
   ];
 
