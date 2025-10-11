@@ -1,6 +1,11 @@
+import './Layout.css';
+
 function Layout({ children }) {
-  return <main className="layout">{children}</main>;
+  return (
+    <div className="layout-container">
+      {children}
+    </div>
+  );
 }
 
 export default Layout;
-

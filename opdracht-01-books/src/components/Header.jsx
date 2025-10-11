@@ -1,11 +1,13 @@
+import './Header.css';
+
 function Header() {
   return (
     <header className="header">
-      <nav>
+      <nav className="navbar">
         <ul>
           <li>Home</li>
           <li>Contact</li>
-          <li>About us</li>
+          <li>About Us</li>
         </ul>
       </nav>
     </header>
@@ -13,3 +15,4 @@ function Header() {
 }
 
 export default Header;
+
