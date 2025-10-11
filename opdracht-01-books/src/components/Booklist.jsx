@@ -1,19 +1,17 @@
-import Book from "./Book.jsx";
+import "./BookList.css";
 
 function BookList({ books }) {
   return (
     <div className="booklist">
-      {books.map((book) => (
-        <Book
-          key={book.title}
-          title={book.title}
-          author={book.author}
-          image={book.image}
-        />
+      {books.map((book, index) => (
+        <div key={index} className="book">
+          <img src={book.image} alt={book.title} />
+          <h2>{book.title}</h2>
+          <p>{book.author}</p>
+        </div>
       ))}
     </div>
   );
 }
 
 export default BookList;
-
