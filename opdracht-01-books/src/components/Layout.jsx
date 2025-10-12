@@ -1,7 +1,5 @@
-import "./Layout.css";
-
 function Layout({ children }) {
-  return <div className="layout-container">{children}</div>;
+  return <div className="layout">{children}</div>;
 }
 
 export default Layout;

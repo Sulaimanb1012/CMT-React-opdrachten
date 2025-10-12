@@ -1,9 +1,7 @@
-import "./Header.css";
-
 function Header() {
   return (
-    <header className="header">
-      <nav className="navbar">
+    <header className="navbar">
+      <nav>
         <ul>
           <li>Home</li>
           <li>Contact</li>
@@ -15,4 +13,3 @@ function Header() {
 }
 
 export default Header;
-
