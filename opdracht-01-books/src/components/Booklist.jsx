@@ -3,18 +3,18 @@ import { useState } from "react";
 function BookList() {
   const [books] = useState([
     {
-      title: "Interesting Facts For Curious Minds",
-      author: "Jordan Moore",
+      title: "Harry Ptter",
+      author: "J.K Rowling",
       image: "/images/book-1.png",
     },
     {
-      title: "Atomic Habits",
-      author: "James Clear",
+      title: "Fantasia VI",
+      author: "Geronimo Stilton",
       image: "/images/book-2.png",
     },
     {
-      title: "Fairy Tale",
-      author: "Stephen King",
+      title: "The Hunger Games",
+      author: "Suzanna Collins",
       image: "/images/book-3.png",
     },
   ]);
