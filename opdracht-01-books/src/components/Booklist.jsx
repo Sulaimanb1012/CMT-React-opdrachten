@@ -1,4 +1,5 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import Book from "./Book"; 
 
 function BookList() {
   const [books] = useState([
@@ -22,11 +23,12 @@ function BookList() {
   return (
     <div className="booklist">
       {books.map((book, index) => (
-        <div key={index} className="book">
-          <img src={book.image} alt={book.title} />
-          <h2>{book.title}</h2>
-          <p>{book.author}</p>
-        </div>
+        <Book
+          key={index}
+          title={book.title}
+          author={book.author}
+          image={book.image}
+        />
       ))}
     </div>
   );
