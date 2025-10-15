@@ -13,7 +13,7 @@ function Book({ title, author, image }) {
       <h3>{title}</h3>
       <p>{author}</p>
       <button onClick={verhoogTeller}>
-        Hoeveel Keer: {aantalKeerGelezen}
+      Keer gelezen: {aantalKeerGelezen}
       </button>
     </div>
   );
