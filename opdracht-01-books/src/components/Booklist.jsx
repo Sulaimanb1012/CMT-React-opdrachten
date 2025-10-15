@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Book from "./Book"; 
+import Book from "./Book";
+import BookCounter from "./BookCounter";
 
 function BookList() {
   const [books] = useState([
@@ -22,6 +23,7 @@ function BookList() {
 
   return (
     <div className="booklist">
+      <BookCounter aantal={books.length} />
       {books.map((book, index) => (
         <Book
           key={index}
