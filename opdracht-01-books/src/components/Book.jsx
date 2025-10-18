@@ -12,9 +12,7 @@ function Book({ title, author, image }) {
       <img src={image} alt={title} />
       <h3>{title}</h3>
       <p>{author}</p>
-      <button onClick={verhoogTeller}>
-      Keer gelezen: {aantalKeerGelezen}
-      </button>
+      <button onClick={verhoogTeller}>Keer gelezen: {aantalKeerGelezen}</button>
     </div>
   );
 }
