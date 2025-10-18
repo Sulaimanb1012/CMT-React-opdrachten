@@ -1,42 +1,106 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Algemene styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0052d4, #4364f7, #6fb1fc);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container voor de to-do list */
+.todo-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  width: 400px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Titel */
+.todo-container h1 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Input en button */
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
 }
 
-.card {
-  padding: 2em;
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0 15px;
+  font-size: 20px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.read-the-docs {
-  color: #888;
+button:hover {
+  background-color: #2980b9;
+}
+
+/* To-do lijst */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  background: white;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.todo-item button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Iconen (check en delete) */
+.check-btn {
+  background-color: #2ecc71;
+  color: white;
+  border-radius: 3px;
+  padding: 5px 7px;
+}
+
+.delete-btn {
+  background-color: #3498db;
+  color: white;
+  border-radius: 3px;
+  padding: 5px 7px;
+  margin-left: 5px;
+}
+
+.check-btn:hover {
+  background-color: #27ae60;
+}
+
+.delete-btn:hover {
+  background-color: #2980b9;
 }
