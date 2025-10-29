@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* optioneel: achtergrondkleur standaard instellen */
-html, body {
-  @apply bg-gray-50 dark:bg-gray-900 transition-colors duration-300;
+
+body {
+  @apply bg-gray-100 text-gray-800 font-sans;
+}
+
+
+button {
+  @apply transition duration-200 ease-in-out;
 }
