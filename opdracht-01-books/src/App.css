@@ -72,3 +72,49 @@
   font-size: 0.9rem;
   margin: 0;
 }
+/* Zoekbalk container */
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 500px;
+  background-color: #f5f5f5;
+  border-radius: 50px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+/* Invoerveld */
+.search-input {
+  flex: 1;
+  padding: 12px 18px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  border-radius: 50px 0 0 50px;
+}
+
+
+.search-button {
+ color: #f3a847;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0 50px 50px 0;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.2s ease;
+}
+
+
+.search-button:hover {
+  background-color: #f3a847;
+}
+
+
+.search-input:focus {
+  background-color: #fff;
+}
+
