@@ -1,11 +1,11 @@
-import ToDoItem from "./ToDoItem.jsx";
+import ToDoItem from "./ToDoItem";
 
-export default function ToDoList({ todos }) {
+export default function ToDoList({ todos, onDelete }) {
   return (
-    <ul>
-      {todos.map((t, index) => (
-        <ToDoItem key={index} text={t} />
+    <div className="space-y-3">
+      {todos.map((todo, index) => (
+        <ToDoItem key={index} todo={todo} onDelete={() => onDelete(index)} />
       ))}
-    </ul>
+    </div>
   );
 }

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { PlusIcon } from "@heroicons/react/24/solid";
 
 export default function CreateToDo({ onAdd }) {
   const [text, setText] = useState("");
@@ -10,22 +11,19 @@ export default function CreateToDo({ onAdd }) {
   }
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="flex justify-center mb-6"
-    >
+    <form onSubmit={handleSubmit} className="flex mb-6">
       <input
         type="text"
-        placeholder="Wat moet ik doen?"
+        placeholder="What to do?"
         value={text}
         onChange={(e) => setText(e.target.value)}
-        className="p-2 w-64 rounded-l-md outline-none text-black"
+        className="px-4 py-2 w-72 text-gray-800 rounded-l outline-none"
       />
       <button
         type="submit"
-        className="bg-blue-500 hover:bg-blue-600 text-white px-3 rounded-r-md text-xl font-bold"
+        className="bg-blue-500 hover:bg-blue-600 text-white px-3 flex items-center justify-center rounded-r"
       >
-        +
+        <PlusIcon className="h-5 w-5" />
       </button>
     </form>
   );
