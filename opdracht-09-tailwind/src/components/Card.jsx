@@ -10,12 +10,14 @@ export default function Card() {
         className="rounded-lg mb-4"
       />
 
-      <h2 className="text-2xl font-semibold text-gray-800 leading-tight">
+      <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 leading-tight">
         You can work from anywhere.{" "}
-        <span className="text-indigo-500 font-bold">Take advantage of it.</span>
+        <span className="text-indigo-500 dark:text-indigo-400 font-bold">
+          Take advantage of it.
+        </span>
       </h2>
 
-      <p className="text-gray-600 mt-3 mb-5">
+      <p className="text-gray-600 dark:text-gray-300 mt-3 mb-5">
         Workcation helps you find work-friendly rentals in beautiful locations
         so you can enjoy some nice weather even when you’re not on vacation.
       </p>

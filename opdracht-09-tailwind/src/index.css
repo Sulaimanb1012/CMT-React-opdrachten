@@ -1,13 +1,2 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-body {
-  @apply bg-gray-100 text-gray-800 font-sans;
-}
-
-
-button {
-  @apply transition duration-200 ease-in-out;
-}
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
