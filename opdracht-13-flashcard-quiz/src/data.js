@@ -14,7 +14,7 @@ const data = [
   { question: "Wat is de hoofdstad van Griekenland?", answer: "Athene" },
   { question: "Wat is de hoofdstad van Turkije?", answer: "Ankara" },
   { question: "Wat is de hoofdstad van Egypte?", answer: "Caïro" },
-  { question: "Wat is de hoofdstad van Japan?", answer: "Tokio" },
+  { question: "Wat is de hoofdstad van Japan?", answer: "Tokyo" },
   { question: "Wat is de hoofdstad van China?", answer: "Peking" },
   { question: "Wat is de hoofdstad van Australië?", answer: "Canberra" },
   { question: "Wat is de hoofdstad van Canada?", answer: "Ottawa" },
