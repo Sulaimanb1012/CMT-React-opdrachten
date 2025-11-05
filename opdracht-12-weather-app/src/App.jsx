@@ -97,7 +97,6 @@ const App = () => {
           <h1 className="text-4xl font-extrabold text-center mb-6 text-blue-200 drop-shadow-lg">
             Weather App
           </h1>
-
           
           {!weather ? (
             <form onSubmit={handleSearch} className="flex flex-col relative">
