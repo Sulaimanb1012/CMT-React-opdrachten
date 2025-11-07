@@ -5,7 +5,7 @@ function WeatherInfo({ data }) {
   const { current, forecast } = data;
 
   return (
-    <div
+    <section
       style={{
         marginTop: "30px",
         display: "inline-block",
@@ -18,28 +18,26 @@ function WeatherInfo({ data }) {
       }}
       onClick={() => setOpen(!open)}
     >
-      <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+      <header style={{ display: "flex", alignItems: "center", gap: "6px" }}>
         <h1>{current.name}</h1>
         <img src={`https://openweathermap.org/img/wn/${current.weather[0].icon}.png`} />
-      </div>
+      </header>
 
       <p>Temperatuur: {current.main.temp} °C</p>
 
       {open && (
-        <>
+        <article>
           <p>Gevoelstemperatuur: {current.main.feels_like} °C</p>
           <p>Luchtvochtigheid: {current.main.humidity}%</p>
           <p>Wind snelheid: {current.wind.speed} m/s</p>
 
           <h3 style={{ marginTop: "10px" }}>Weer komende dagen:</h3>
           {forecast.map((day, i) => (
-            <div key={i}>
-              <p>{day.dt_txt.slice(0, 10)} - {day.main.temp}°C</p>
-            </div>
+            <p key={i}>{day.dt_txt.slice(0, 10)} - {day.main.temp}°C</p>
           ))}
-        </>
+        </article>
       )}
-    </div>
+    </section>
   );
 }
 

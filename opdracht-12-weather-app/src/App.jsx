@@ -36,24 +36,28 @@ function App() {
     else setBackground("#ffffff");
 
     setCity("");
-  };
+    };
 
   return (
-    <div style={{ padding: "40px", textAlign: "center", background: background, minHeight: "100vh" }}>
-      <form onSubmit={fetchWeather}>
-        <input
-          type="text"
-          value={city}
-          placeholder="Brussel"
-          onChange={(e) => setCity(e.target.value)}
-        />
-        <button style={{ marginLeft: "8px" }}>Zoeken</button>
-      </form>
+    <section style={{ padding: "40px", textAlign: "center", background, minHeight: "100vh" }}>
+      <header>
+        <form onSubmit={fetchWeather}>
+          <input
+            type="text"
+            value={city}
+            placeholder="Brussel"
+            onChange={(e) => setCity(e.target.value)}
+          />
+          <button style={{ marginLeft: "8px" }}>Zoeken</button>
+        </form>
+      </header>
 
-      {weatherList.map((w, index) => (
-        <WeatherInfo key={index} data={w} />
-      ))}
-    </div>
+      <section>
+        {weatherList.map((w, index) => (
+          <WeatherInfo key={index} data={w} />
+        ))}
+      </section>
+    </section>
   );
 }
 
