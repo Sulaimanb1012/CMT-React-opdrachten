@@ -13,7 +13,7 @@ export default function UserProfile({ onSave, defaultValues }) {
       return toast.error("Vul al je velden in");
 
     setUserProfile(form);
-    toast.success("Profiel is opgeslagen");
+    toast.success(" je profile is nu opgeslagen");
     onSave(form);
   };
 
