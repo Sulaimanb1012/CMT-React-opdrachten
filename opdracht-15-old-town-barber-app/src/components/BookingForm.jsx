@@ -9,14 +9,14 @@ export default function BookingForm({ user, shop }) {
 
   const book = () => {
     if (!service || !date || !time)
-      return toast.error("Vul alle velden in!");
+      return toast.error("Vul al de velden in!");
 
     const selectedService = shop.services.find((s) => s.id == service);
     const newAppointment = { user, service: selectedService, date, time };
 
     const updated = [...getAppointments(), newAppointment];
     setAppointments(updated);
-    toast.success("Afspraak is geboekt");
+    toast.success(" de afspraak is geboekt");
   };
 
   return (

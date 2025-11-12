@@ -5,7 +5,7 @@ export default function BookingsList() {
 
   return (
     <div className="card max-h-[400px] overflow-auto">
-      <h2 className="text-lg font-bold mb-3">📋 Mijn afspraken</h2>
+      <h2 className="text-lg font-bold mb-3">Mijn afspraken</h2>
 
       {appointments.length === 0 && <p className="text-gray-500">Nog geen afspraken.</p>}
 
