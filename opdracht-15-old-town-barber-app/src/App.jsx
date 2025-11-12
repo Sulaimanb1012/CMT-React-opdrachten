@@ -22,7 +22,7 @@ const shopData = {
 export default function App() {
   const [user, setUser] = useState(getUserProfile());
 
-  // Reminder Feature
+ 
   useEffect(() => {
     const now = new Date();
     getAppointments().forEach((a) => {
@@ -41,8 +41,8 @@ export default function App() {
       <ToastContainer />
 
       <div className="flex justify-between items-center mb-8 border-b pb-3">
-        <h1 className="text-3xl font-bold uppercase tracking-wide">Old Town Barber 💈</h1>
-        <button className="btn-secondary" onClick={() => setUser(null)}>Profiel bewerken</button>
+        <h1 className="text-3xl font-bold uppercase tracking-wide">Old Town Barber</h1>
+        <button className="btn-secondary" onClick={() => setUser(null)}>Bewerk jou profiel</button>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

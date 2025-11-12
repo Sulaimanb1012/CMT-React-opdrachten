@@ -19,7 +19,7 @@ export default function UserProfile({ onSave, defaultValues }) {
 
   return (
     <div className="card max-w-md mx-auto mt-10">
-      <h2 className="text-xl font-bold mb-4">👤 Jouw Profiel</h2>
+      <h2 className="text-xl font-bold mb-4">Jouw Profiel</h2>
 
       <input className="input" name="name" placeholder="Naam" value={form.name} onChange={handleChange}/>
       <input className="input" name="email" placeholder="Email" value={form.email} onChange={handleChange}/>
