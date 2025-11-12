@@ -1,18 +1,13 @@
 @import "tailwindcss";
 
-/* Global layout */
 body {
   background: #f6f4ef;
   font-family: sans-serif;
   padding: 20px;
 }
-
-/* Gold accent titles */
 h1, h2 {
   color: #b38b59;
 }
-
-/* Inputs */
 .input {
   width: 100%;
   border: 1px solid #cfcfcf;
@@ -21,8 +16,6 @@ h1, h2 {
   margin-bottom: 0.6rem;
   background: white;
 }
-
-/* Buttons */
 .btn-primary {
   background: black;
   color: white;
@@ -34,7 +27,6 @@ h1, h2 {
 .btn-primary:hover {
   opacity: 0.85;
 }
-
 .btn-secondary {
   border: 1px solid black;
   padding: 0.5rem 1rem;
@@ -46,8 +38,6 @@ h1, h2 {
   background: black;
   color: white;
 }
-
-/* Cards */
 .card {
   background: white;
   border-radius: 12px;
