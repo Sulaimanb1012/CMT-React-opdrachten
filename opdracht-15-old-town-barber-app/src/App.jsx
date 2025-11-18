@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import { getUserProfile, getAppointments } from "./utils/localStorage";
+import { getUserProfile, getAppointments, setAppointments } from "./utils/localStorage";
 import UserProfile from "./components/UserProfile";
 import ShopInfo from "./components/ShopInfo";
 import BookingForm from "./components/BookingForm";
@@ -21,18 +21,24 @@ const shopData = {
 
 export default function App() {
   const [user, setUser] = useState(getUserProfile());
+  const [appointments, setAppointmentsState] = useState(getAppointments());
 
- 
   useEffect(() => {
     const now = new Date();
-    getAppointments().forEach((a) => {
+    appointments.forEach((a) => {
       const time = new Date(`${a.date}T${a.time}`);
-      const diff = (time - now) / 60000; // in minutes
+      const diff = (time - now) / 60000;
       if (diff > 0 && diff < 15) {
         toast.info(`⏰ Reminder: ${a.service.name} om ${a.time}`);
       }
     });
-  }, []);
+  }, [appointments]);
+
+ 
+  const handleUpdate = (updated) => {
+    setAppointments(updated);
+    setAppointmentsState(updated);
+  };
 
   if (!user) return <UserProfile onSave={setUser} />;
 
@@ -47,8 +53,13 @@ export default function App() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <ShopInfo shop={shopData} />
-        <BookingsList />
-        <BookingForm user={user} shop={shopData} />
+        <BookingsList appointments={appointments} />
+        <BookingForm
+          user={user}
+          shop={shopData}
+          appointments={appointments}
+          onNewAppointments={handleUpdate}
+        />
       </div>
     </div>
   );
