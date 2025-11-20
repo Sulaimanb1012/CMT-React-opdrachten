@@ -32,7 +32,7 @@ function GameBoard() {
   }, [openCards, cards]);
 
   return (
-    <div className="gameboard">
+    <div className="kapsalon">
       {cards.map((emoji, index) => (
         <Card
           key={index}

@@ -13,15 +13,7 @@ function App() {
     <div style={{ textAlign: "center", padding: "20px" }}>
       <h1>Memory Game</h1>
 
-      <button
-        onClick={restartGame}
-        style={{
-          padding: "10px 20px",
-          marginBottom: "20px",
-          fontSize: "16px",
-          cursor: "pointer"
-        }}
-      >
+      <button onClick={restartGame}>
         Opnieuw starten
       </button>
 
