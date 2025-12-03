@@ -17,5 +17,5 @@ setTextInput('');
      </form>
      );
 }
- 
+ -
 export default CreateMessage;
