@@ -8,7 +8,6 @@ import "./App.css";
 function App() {
   const [search, setSearch] = useState("");
 
-
   const handleSearch = (value) => {
     setSearch(value);
   };
